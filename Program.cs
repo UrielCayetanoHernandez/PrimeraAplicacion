@@ -15,16 +15,10 @@ namespace PrimeraAplicacion
     {
         static void Main(string[] args)
         {
-            string archivo = "archivo.txt";
-            string contenido;
+            Persona objpersona = new Persona();
+            objpersona.crearpersona("Uriel Cayetano", 25, "27-03-1997");
 
-            FileStream fsSource = new FileStream(archivo, FileMode.Open, FileAccess.Read);
-            using (StreamReader sr = new StreamReader(fsSource))
-            {
-                contenido = sr.ReadToEnd();
-            }
-
-            Console.WriteLine(contenido);
+            Console.WriteLine("Nombre:" + objpersona.Nombre + " Edad: " + objpersona.Edad + " Fecha Nacimiento: " + objpersona.FechaNacimiento);
 
             Console.ReadLine();
         }
