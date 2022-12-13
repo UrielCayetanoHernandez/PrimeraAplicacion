@@ -14,24 +14,12 @@ namespace PrimeraAplicacion
     {
         static void Main(string[] args)
         {
-            String opcion = "A";
+            int tabla = 4, num = 1, limite = 10;
 
-            switch (opcion)
+            for(num = num; num<= limite; num++)
             {
-                case "A":
-                    Console.WriteLine("Opcion 1");
-                    break;
-                case "B":
-                    Console.WriteLine("Opcion 2");
-                    break;
-                case "c":
-                    Console.WriteLine("Opcion 3");
-                    break;
-                default:
-                    Console.WriteLine("Opcion Invalida");
-                    break;
+                Console.WriteLine(tabla + " * " + num + " = " + tabla * num); // 4* 1= 4
             }
-
 
             Console.Read();
         }
