@@ -12,14 +12,15 @@ namespace PrimeraAplicacion
         private int edad;
         private string fechanacimiento;
 
-        public string Nombre { get => nombre; set => nombre = value; }
+        public Persona()
+        {
+            Console.WriteLine("Soy el constructor");
+        }
+
+        public string Nombre { get => nombre.ToUpper(); set => nombre = value; }
 
         public int Edad { get => edad; set => edad = value; }
 
-        internal void crearpersona()
-        {
-            throw new NotImplementedException();
-        }
 
         public string FechaNacimiento { get => fechanacimiento; set => fechanacimiento = value; }
 
@@ -29,5 +30,10 @@ namespace PrimeraAplicacion
             this.edad = _edad;
             FechaNacimiento = _fechanacimiento;
         }
+
+        public string crearPersona()
+        {
+            return "Nombre:" + Nombre + " Edad: " + Edad + " Fecha Nacimiento: " + FechaNacimiento;
+        } 
     }
 }

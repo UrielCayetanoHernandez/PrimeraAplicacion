@@ -20,6 +20,9 @@ namespace PrimeraAplicacion
 
             Console.WriteLine("Nombre:" + objpersona.Nombre + " Edad: " + objpersona.Edad + " Fecha Nacimiento: " + objpersona.FechaNacimiento);
 
+
+            Console.WriteLine("Sobre carga de metodo" + objpersona.crearPersona());
+
             Console.ReadLine();
         }
     }
