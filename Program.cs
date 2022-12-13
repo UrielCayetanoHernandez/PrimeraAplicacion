@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,33 +15,18 @@ namespace PrimeraAplicacion
     {
         static void Main(string[] args)
         {
-            int[,] numeros = new int[10, 8];
-            Random r = new Random();
+            string archivo = "archivo.txt";
+            string contenido;
 
-            for(int x = 0; x < 10; x++)
+            FileStream fsSource = new FileStream(archivo, FileMode.Open, FileAccess.Read);
+            using (StreamReader sr = new StreamReader(fsSource))
             {
-                for(int y = 0; y<8; y++)
-                {
-                    numeros[x, y] = r.Next(0, 9);
-                    Console.Write(numeros[x, y] + " ");
-                }
-                Console.WriteLine();
-            }
-            int[] resultado = new int[10];
-
-             for (int a = 0; a<8; a++)
-            {
-                resultado[a] = 0;
-                for (int b = 0; b < 10; b++)
-
-                {
-                    resultado[a] += numeros[b, a];
-                }
-                Console.Write(resultado[a] + " ");
+                contenido = sr.ReadToEnd();
             }
 
+            Console.WriteLine(contenido);
 
-            Console.Read();
+            Console.ReadLine();
         }
     }
 }
