@@ -14,12 +14,31 @@ namespace PrimeraAplicacion
     {
         static void Main(string[] args)
         {
-            int tabla = 4, num = 1, limite = 10;
+            int[,] numeros = new int[10, 8];
+            Random r = new Random();
 
-            for(num = num; num<= limite; num++)
+            for(int x = 0; x < 10; x++)
             {
-                Console.WriteLine(tabla + " * " + num + " = " + tabla * num); // 4* 1= 4
+                for(int y = 0; y<8; y++)
+                {
+                    numeros[x, y] = r.Next(0, 9);
+                    Console.Write(numeros[x, y] + " ");
+                }
+                Console.WriteLine();
             }
+            int[] resultado = new int[10];
+
+             for (int a = 0; a<8; a++)
+            {
+                resultado[a] = 0;
+                for (int b = 0; b < 10; b++)
+
+                {
+                    resultado[a] += numeros[b, a];
+                }
+                Console.Write(resultado[a] + " ");
+            }
+
 
             Console.Read();
         }
