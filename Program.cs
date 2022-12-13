@@ -14,13 +14,24 @@ namespace PrimeraAplicacion
     {
         static void Main(string[] args)
         {
-            String cadenas;
-            cadenas = "Hola";
-            int numero = 10;
+            String opcion = "A";
 
+            switch (opcion)
+            {
+                case "A":
+                    Console.WriteLine("Opcion 1");
+                    break;
+                case "B":
+                    Console.WriteLine("Opcion 2");
+                    break;
+                case "c":
+                    Console.WriteLine("Opcion 3");
+                    break;
+                default:
+                    Console.WriteLine("Opcion Invalida");
+                    break;
+            }
 
-            Console.WriteLine(cadenas +" "+ numero);
-      
 
             Console.Read();
         }
