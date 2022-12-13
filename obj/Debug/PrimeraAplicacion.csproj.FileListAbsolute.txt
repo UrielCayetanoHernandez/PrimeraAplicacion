@@ -1,0 +1,7 @@
+C:\Users\Programdor Analista\Documents\Visual Studio 2019\Projects\Capacitacion\PrimeraAplicacion\bin\Debug\PrimeraAplicacion.exe.config
+C:\Users\Programdor Analista\Documents\Visual Studio 2019\Projects\Capacitacion\PrimeraAplicacion\bin\Debug\PrimeraAplicacion.exe
+C:\Users\Programdor Analista\Documents\Visual Studio 2019\Projects\Capacitacion\PrimeraAplicacion\bin\Debug\PrimeraAplicacion.pdb
+C:\Users\Programdor Analista\Documents\Visual Studio 2019\Projects\Capacitacion\PrimeraAplicacion\obj\Debug\PrimeraAplicacion.csproj.AssemblyReference.cache
+C:\Users\Programdor Analista\Documents\Visual Studio 2019\Projects\Capacitacion\PrimeraAplicacion\obj\Debug\PrimeraAplicacion.csproj.CoreCompileInputs.cache
+C:\Users\Programdor Analista\Documents\Visual Studio 2019\Projects\Capacitacion\PrimeraAplicacion\obj\Debug\PrimeraAplicacion.exe
+C:\Users\Programdor Analista\Documents\Visual Studio 2019\Projects\Capacitacion\PrimeraAplicacion\obj\Debug\PrimeraAplicacion.pdb
